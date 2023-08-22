@@ -624,9 +624,9 @@ ol.fancy_list li::before {
 
 #fp-nav ul li,
 .fp-slidesNav ul li {
-	width: 9px !important;
-	height: 9px !important;
-	margin: 22px 8px !important;
+	width: 7px !important;
+	height: 7px !important;
+	margin: 25px 8px !important;
 }
 
 #fp-nav a {
@@ -653,9 +653,16 @@ ol.fancy_list li::before {
 }
 
 #fp-nav ul li .fp-tooltip.right {
-	background: rgba(255, 255, 255, 0);
+	background-color: rgb(255, 255, 255);
+	background-image: linear-gradient(200deg,
+			rgb(158, 97, 255),
+			rgba(142, 97, 255, 0) 34%),
+		radial-gradient(circle at 0% -100%,
+			rgb(97, 155, 255) 20%,
+			rgba(205, 219, 248, 0) 51%),
+		linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
+    font-size: 1.2rem;
 	color: var(--custom-purple-color);
-	border: 1px solid rgb(167 167 167);
 	padding: 8px 23px;
 	font-family: var(--manrope-font);
 }
@@ -1680,6 +1687,9 @@ footer .copyright__,
 
 /* Tablets and Smaller Laptops (766px and below) */
 @media (max-width: 766px) {
+	html{
+		font-size: 52.5%;
+	}
 	header .container-fluid .row_ .logo_contianer .logo_ a img {
 		width: 7rem;
 	}
