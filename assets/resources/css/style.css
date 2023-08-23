@@ -408,21 +408,22 @@ ol.fancy_list li::before {
 }
 
 .common__blogs_container .blog_post {
-	background-color: rgb(11, 3, 38);
-	background-image: linear-gradient(rgb(24, 4, 61),
+	/* background-color: rgb(11, 3, 38); */
+	/* background-image: linear-gradient(rgb(24, 4, 61),
 			rgb(11, 3, 38) 11%,
 			rgb(11, 3, 38) 67%,
-			rgb(0, 0, 0));
-	background-size: cover;
+			rgb(0, 0, 0)); */
+	/* background-size: cover; */
 	width: 95%;
 	height: 100%;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2rem;
 	position: relative;
+	background-color: hsl(222, 47%, 11%);
 }
 
 .common__blogs_container .blog_post::after {
-	content: "";
+	/* content: ""; */
 	position: absolute;
 	top: 100%;
 	left: 0px;
@@ -443,7 +444,7 @@ ol.fancy_list li::before {
 
 .published_date {
 	display: inline-block;
-	color: rgb(169, 151, 151);
+	color: rgb(209 209 209);
 	font-weight: 500;
 }
 
@@ -1120,8 +1121,6 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 
 .animated-image {
 	animation: 2s ease-in-out 0s infinite alternate none running pulse;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 50%;
 }
 
 @keyframes pulse {
@@ -1528,7 +1527,8 @@ footer .copyright__,
 	z-index: 2;
 }
 
-#fixed-social .fixed-facebook {
+#fixed-social .fixed-discord,
+#fixed-social .fixed-instagrem{
 	border-bottom: 0.1rem solid var(--custom-purple-color);
 }
 
@@ -1630,11 +1630,7 @@ footer .copyright__,
 
 /* Voice Page CSS */
 .voice_setup_content_container .card {
-	background-color: rgb(11, 3, 38);
-	background-image: linear-gradient(rgb(24, 4, 61),
-			rgb(11, 3, 38) 11%,
-			rgb(11, 3, 38) 67%,
-			rgb(0, 0, 0));
+	background-color: transparent;
 	color: var(--custom-purple-color);
 	padding: 1rem 3rem;
 }
@@ -1642,8 +1638,8 @@ footer .copyright__,
 .voice_setup_content_container .card li {
 	background-color: transparent;
 	border: none;
-	color: var(--white-color);
-	opacity: 0.8;
+	color: var(--custom-purple-color);
+	opacity: 0.9;
 }
 
 .voice_setup_content_container .list-group-item strong {
