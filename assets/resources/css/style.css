@@ -333,7 +333,7 @@ ol.fancy_list li::before {
 .common_blog_heading_ {
 	margin-bottom: 2rem;
 	margin-top: 5rem;
-	font-size: 3.4rem;
+	font-size: 3rem;
 	color: var(--white-color);
 	animation: initial;
 	opacity: 0.9 !important;
@@ -454,7 +454,7 @@ ol.fancy_list li::before {
 
 .common__blogs_container p {
 	margin: 0px 0px 4.5rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	line-height: 1.45;
 	color: var(--custom-purple-color);
 	font-family: var(--manrope-font);
