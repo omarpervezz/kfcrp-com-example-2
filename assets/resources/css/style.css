@@ -1,13 +1,15 @@
 :root {
-	--manrope-font: "Manrope", sans-serif;
-	--roboto-font: "Roboto Mono", monospace;
+	--manrope-font:
+	"Manrope", sans-serif;
+	--roboto-font:
+	"Roboto Mono", monospace;
 	--stratos: Stratos-Regular, sans-serif;
 	--white-color: #ffffff;
 	--primary-color: #0066cc;
 	--secondary-color: #ffffff;
 	--font-style: normal;
 	--custom-purple-color: #e2dcff;
-	--custom-size: 1.7rem;
+	--custom-size: 1.5rem;
 }
 
 @font-face {
@@ -208,9 +210,7 @@ section {
 	left: 0px;
 	width: 100%;
 	height: 0.3rem;
-	background: -webkit-linear-gradient(90deg,
-			rgb(155, 175, 217) 0%,
-			rgb(16, 55, 132) 100%);
+	background: var(--custom-purple-color);
 	transform: scaleX(0);
 	transform-origin: right center;
 	transition: transform 0.5s ease-in-out 0s;
@@ -408,12 +408,6 @@ ol.fancy_list li::before {
 }
 
 .common__blogs_container .blog_post {
-	/* background-color: rgb(11, 3, 38); */
-	/* background-image: linear-gradient(rgb(24, 4, 61),
-			rgb(11, 3, 38) 11%,
-			rgb(11, 3, 38) 67%,
-			rgb(0, 0, 0)); */
-	/* background-size: cover; */
 	width: 95%;
 	height: 100%;
 	border-radius: 10px;
@@ -423,7 +417,6 @@ ol.fancy_list li::before {
 }
 
 .common__blogs_container .blog_post::after {
-	/* content: ""; */
 	position: absolute;
 	top: 100%;
 	left: 0px;
@@ -625,9 +618,9 @@ ol.fancy_list li::before {
 
 #fp-nav ul li,
 .fp-slidesNav ul li {
-	width: 7px !important;
-	height: 7px !important;
-	margin: 25px 8px !important;
+	width: 6px !important;
+	height: 6px !important;
+	margin: 23px 8px !important;
 }
 
 #fp-nav a {
@@ -638,7 +631,6 @@ ol.fancy_list li::before {
 }
 
 #fp-nav a.active {
-	background-color: rgb(155, 255, 209);
 	opacity: 1;
 	position: relative;
 }
@@ -666,8 +658,28 @@ ol.fancy_list li::before {
 	color: var(--custom-purple-color);
 	padding: 8px 23px;
 	font-family: var(--manrope-font);
+	right: 18px !important;
 }
-
+#fp-nav ul li .active{
+	--width: 100%;
+    --height: 100%;
+	width: var(--width);
+	height: var(--height);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#fp-nav ul li .active::before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	border: 1px solid rgb(167 167 167);
+	border-radius: 50%;
+	
+}
 .desktop_menu {
 	position: relative;
 }
@@ -878,9 +890,11 @@ html.pushbar_locked .pushbar_overlay {
 	width: 100%;
 	height: 41vh;
 	position: relative;
-	background: linear-gradient(99deg,
+	backdrop-filter: blur(2px);
+	/* background: linear-gradient(99deg,
 			rgba(4, 4, 4, 0.53) 0%,
-			rgba(0, 0, 0, 0.73) 100%);
+			rgba(0, 0, 0, 0.73) 100%); */
+			
 }
 
 .push-container .mobile_container .menu___ .mobile_menu_logo {
@@ -990,7 +1004,7 @@ header .container-fluid .row_ .menu_container .nav_menu ul li a.nav_item:visited
 }
 
 header .container-fluid .row_ .menu_container .nav_menu ul li .others {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: var(--custom-purple-color);
 	cursor: pointer;
 	display: inline-block;
@@ -1349,16 +1363,10 @@ header .container-fluid .row_ .menu_container .nav_menu ul li:first-child {
 }
 
 .owl-carousel {
-	background-color: rgb(7 7 7 / 45%);
-	background-image: linear-gradient(rgb(24 4 61 / 0%),
-			rgb(11 3 38 / 0%) 11%,
-			rgb(11 3 38 / 0%) 67%,
-			rgb(0 0 0 / 0%));
-	border-radius: 4px;
-	overflow: hidden;
 	position: relative;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px;
 	transition: transform 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+	backdrop-filter: blur(2px);
+	border: none;
 }
 
 .owl-carousel:hover {
@@ -1510,7 +1518,8 @@ footer .copyright__,
 			rgba(205, 219, 248, 0) 51%),
 		linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
 	position: fixed;
-	bottom: 150px;
+	right: 1.3rem;
+	bottom: 113px;
 	z-index: 102;
 	border-radius: 0.4rem;
 }
