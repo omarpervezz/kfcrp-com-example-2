@@ -1518,7 +1518,7 @@ footer .copyright__,
 			rgba(205, 219, 248, 0) 51%),
 		linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
 	position: fixed;
-	right: 1.3rem;
+	left: 0;
 	bottom: 113px;
 	z-index: 102;
 	border-radius: 0.4rem;
@@ -1536,8 +1536,7 @@ footer .copyright__,
 	z-index: 2;
 }
 
-#fixed-social .fixed-discord,
-#fixed-social .fixed-instagrem{
+#fixed-social .fixed-discord{
 	border-bottom: 0.1rem solid var(--custom-purple-color);
 }
 
