@@ -872,11 +872,11 @@ html.pushbar_locked .pushbar_overlay {
 
 [data-pushbar-id] {
   background-color: rgba(11, 3, 38, 0.95);
-  background-image: url("../../img/backgroundImg/fivem2.png");
+  background-image: url("../../img/kfcrp-6.png");
   background-size: cover;
   background-position: center center;
   z-index: 1002;
-  width: 60% !important;
+  width: 70% !important;
 }
 
 .push-container {
@@ -896,7 +896,7 @@ html.pushbar_locked .pushbar_overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.36);
+  background: rgb(0 0 0 / 24%);
   z-index: -1;
 }
 
@@ -904,10 +904,11 @@ html.pushbar_locked .pushbar_overlay {
   width: 100%;
   height: 41vh;
   position: relative;
-  backdrop-filter: blur(2px);
-  /* background: linear-gradient(99deg,
-			rgba(4, 4, 4, 0.53) 0%,
-			rgba(0, 0, 0, 0.73) 100%); */
+  background: linear-gradient(
+    99deg,
+    rgb(4 4 4 / 65%) 0%,
+    rgb(0 0 0 / 68%) 100%
+  );
 }
 
 .push-container .mobile_container .menu___ .mobile_menu_logo {
@@ -926,9 +927,8 @@ html.pushbar_locked .pushbar_overlay {
 
 .push-container .container-fluid .mobile__navigation__ ul .hover_item a svg {
   fill: var(--custom-purple-color);
-  opacity: 0.7;
-  transition: fill 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s,
-    opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  opacity: 1;
+  transition: fill 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
 
 .push-container
@@ -939,7 +939,6 @@ html.pushbar_locked .pushbar_overlay {
   a:hover
   svg {
   fill: var(--white-color);
-  opacity: 1;
 }
 
 #close {
@@ -1297,6 +1296,7 @@ section.kfcrp_c_m .col-md-6 div.content_container_ {
 section.kfcrp_c_m .content_container_ .kfcrp_s_b {
   filter: hue-rotate(83deg);
 }
+
 /* kfcrp_6 */
 section.kfcrp_6 .info__img img {
   width: 70rem;

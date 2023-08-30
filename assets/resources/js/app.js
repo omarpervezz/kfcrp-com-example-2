@@ -35,4 +35,3 @@ function removeAnimation() {
   // Remove the "animate__backInRight" class to ensure it's not active
   push__bar.classList.remove("animate__backInRight");
 }
-
