@@ -1277,7 +1277,7 @@ section.kfcrp_c_m .col-md-6 div.content_container_ {
   align-items: start;
   width: 100%;
   height: 60%;
-  /* background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   background-image: linear-gradient(
       200deg,
       rgb(158, 97, 255),
@@ -1288,26 +1288,7 @@ section.kfcrp_c_m .col-md-6 div.content_container_ {
       rgb(97, 155, 255) 20%,
       rgba(205, 219, 248, 0) 51%
     ),
-    linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238)); */
-  background: hsla(192, 95%, 50%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(192, 95%, 50%, 1) 0%,
-    hsla(225, 89%, 47%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(192, 95%, 50%, 1) 0%,
-    hsla(225, 89%, 47%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(192, 95%, 50%, 1) 0%,
-    hsla(225, 89%, 47%, 1) 100%
-  );
+    linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
   padding: 0 3rem;
   position: absolute;
   right: -5rem;
