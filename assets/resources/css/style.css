@@ -496,7 +496,7 @@ ol.fancy_list li::before {
   padding-bottom: 3rem;
 }
 
-section.section:nth-child(3) {
+section.section:nth-child(6) {
   background-image: linear-gradient(
       rgb(24 4 61 / 70%),
       rgb(11 3 38 / 68%) 11%,
@@ -507,7 +507,7 @@ section.section:nth-child(3) {
   z-index: 10;
 }
 
-.section:nth-child(5) {
+.section:nth-child(8) {
   background-image: linear-gradient(
       rgb(24 4 61 / 70%),
       rgb(11 3 38 / 68%) 11%,
@@ -518,7 +518,7 @@ section.section:nth-child(3) {
   z-index: 9;
 }
 
-.section:nth-child(7) {
+.section:nth-child(10) {
   background-image: linear-gradient(
       rgb(24 4 61 / 70%),
       rgb(11 3 38 / 68%) 11%,
@@ -1267,17 +1267,17 @@ section.kfcrp_c_m {
   background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
     cover;
 }
-.kfcrp_c_m .col-md-6:nth-child(1) {
+.kfcrp_c_m .col-md-6 {
   position: relative;
 }
-section.kfcrp_5 .col-md-6:nth-child(1) div.content_container_ {
+section.kfcrp_c_m .col-md-6 div.content_container_ {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   width: 100%;
   height: 60%;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255);
   background-image: linear-gradient(
       200deg,
       rgb(158, 97, 255),
@@ -1288,17 +1288,41 @@ section.kfcrp_5 .col-md-6:nth-child(1) div.content_container_ {
       rgb(97, 155, 255) 20%,
       rgba(205, 219, 248, 0) 51%
     ),
-    linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
+    linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238)); */
+  background: hsla(192, 95%, 50%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(192, 95%, 50%, 1) 0%,
+    hsla(225, 89%, 47%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(192, 95%, 50%, 1) 0%,
+    hsla(225, 89%, 47%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(192, 95%, 50%, 1) 0%,
+    hsla(225, 89%, 47%, 1) 100%
+  );
   padding: 0 3rem;
   position: absolute;
   right: -5rem;
   z-index: 1;
 }
-section.kfcrp_5 .content_container_ .kfcrp_s_b {
+section.kfcrp_c_m .content_container_ .kfcrp_s_b {
   filter: hue-rotate(83deg);
 }
-section.kfcrp_5 .content_container_ .kfcrp_s_b:hover {
-  box-shadow: none;
+/* kfcrp_6 */
+section.kfcrp_6 .info__img img {
+  width: 70rem;
+}
+/* kfcrp_7 */
+section.kfcrp_7 .col-md-6 div.content_container_ {
+  left: -5rem;
 }
 .endless-adventures {
   background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
@@ -1897,14 +1921,14 @@ footer .copyright__,
     padding: 10px 15px;
     font-size: 1.2rem;
   }
-  section.kfcrp_c_m .col-md-6:nth-child(1) div.content_container_ {
+  section.kfcrp_c_m .col-md-6 div.content_container_ {
     position: initial;
     height: 100%;
     padding: 2rem 1rem;
     align-items: center;
     text-align: center;
   }
-  section.kfcrp_c_m .col-md-6:nth-child(2) img {
+  section.kfcrp_c_m .col-md-6 img {
     width: 50rem !important;
   }
   section.kfcrp_c_m div.content-wrapper {
