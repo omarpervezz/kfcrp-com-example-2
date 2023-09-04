@@ -337,9 +337,8 @@ ol.fancy_list li::before {
   margin-bottom: 2rem;
   margin-top: 5rem;
   font-size: 3rem;
-  color: var(--white-color);
   animation: initial;
-  opacity: 0.9 !important;
+  color: #e5eeee;
 }
 
 .common_blog_heading_::before {
@@ -349,6 +348,8 @@ ol.fancy_list li::before {
 .common_content {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  /* background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
+    cover; */
   background: linear-gradient(rgb(4, 4, 4) 0%, rgba(0, 0, 0, 0.98) 100%) 0% 0% /
     cover;
 }
@@ -417,7 +418,9 @@ ol.fancy_list li::before {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2rem;
   position: relative;
-  background-color: hsl(222, 47%, 11%);
+  background: #192123;
+  border-radius: 4px;
+  border-top: 1px solid #293133;
 }
 
 .common__blogs_container .blog_post::after {
@@ -455,8 +458,8 @@ ol.fancy_list li::before {
   margin: 0px 0px 4.5rem;
   font-size: 1.4rem;
   line-height: 1.45;
-  color: var(--custom-purple-color);
   font-family: var(--manrope-font);
+  color: #95a5a6;
 }
 
 .content-wrapper {
@@ -974,12 +977,7 @@ header {
   top: 0px;
   z-index: 100;
   transition: all 0.2s ease-in-out 0s;
-  background: linear-gradient(
-      251deg,
-      rgba(4, 4, 4, 0.41) 0%,
-      rgba(0, 0, 0, 0.39) 100%
-    )
-    rgba(0, 0, 0, 0.55);
+  background: #192123;
 }
 
 .backDrop {
@@ -1091,12 +1089,7 @@ header
   position: absolute;
   top: 5.8rem;
   left: 0px;
-  background: linear-gradient(
-      251deg,
-      rgba(4, 4, 4, 0.16) 0%,
-      rgba(0, 0, 0, 0.31) 100%
-    )
-    rgba(0, 0, 0, 0.56);
+  background: #192123;
   min-width: 273px;
   border-radius: 14px;
   z-index: 1;
@@ -1276,7 +1269,7 @@ section.kfcrp_c_m .col-md-6 div.content_container_ {
   align-items: start;
   width: 100%;
   height: 60%;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255);
   background-image: linear-gradient(
       200deg,
       rgb(158, 97, 255),
@@ -1287,14 +1280,24 @@ section.kfcrp_c_m .col-md-6 div.content_container_ {
       rgb(97, 155, 255) 20%,
       rgba(205, 219, 248, 0) 51%
     ),
-    linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238));
+    linear-gradient(rgb(108, 82, 238), rgb(108, 82, 238)); */
   padding: 0 3rem;
   position: absolute;
   right: -5rem;
   z-index: 1;
+  background: #192123;
+  border-radius: 4px;
+  border-top: 1px solid #293133;
 }
-section.kfcrp_c_m .content_container_ .kfcrp_s_b {
-  filter: hue-rotate(83deg);
+section.kfcrp_c_m .content_container_ h2.section_heading__ {
+  color: #e5eeee;
+}
+section.kfcrp_c_m .content_container_ h2.section_heading__::before {
+  transform: translateX(1px);
+  background-color: #e5eeee;
+}
+section.kfcrp_c_m .content_container_ p.common-description {
+  color: #95a5a6;
 }
 
 /* kfcrp_6 */

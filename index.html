@@ -1369,7 +1369,6 @@
       function handleIntersection(entries, observer) {
         entries.forEach((entry) => {
           const sectionId = entry.target.getAttribute("id");
-          console.log(sectionId);
           const header = document.querySelector("header");
 
           if (sectionId === "first-section") {
