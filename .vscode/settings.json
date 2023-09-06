@@ -19,10 +19,10 @@
   "workbench.colorTheme": "One Dark Pro Darker",
   "editor.fontSize": 16.5,
   "workbench.iconTheme": "material-icon-theme",
-  "files.autoSave": "off",
-  "editor.wordWrap": "off",
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "git.ignoredRepositories": [
     "c:\\Users\\progr\\.vscode\\extensions\\stepsize.stepsize-1.0.1\\resources\\demo-repository"
   ],

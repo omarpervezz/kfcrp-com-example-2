@@ -281,9 +281,12 @@ section {
 .common_header {
   position: relative;
   padding: 15rem 0rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.44)) center
-      center / cover no-repeat scroll,
-    url("../../img/backgroundImg/about-bg.jpg");
+  background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 0%)) center center /
+      cover no-repeat scroll,
+    url(../../img/backgroundImg/KFCRP_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   z-index: 70;
 }
 
